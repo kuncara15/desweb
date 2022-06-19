@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2</title>
+    <style>
+        .demo.active{
+            font-weight: 900;
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>PTIK FKIP UNS</h1>
+    <p>
+        The <span class="demo">Faculty of Teacher Training and Education</span>, <span class="demo">Sebelas Maret University</span>, Surakarta is an <span class="demo">Educational Personnel Education Institution (LPTK)</span> which has 24 study programs in 6 majors. Each study program has its own characteristics in producing <span class="demo">superior, strong and intelligent educational staff.</span>
+    </p> 
+    <p>
+        The <span class="demo">Informatics and Computer Technology Education (PTIK)</span> study program is planned to take shelter in the management of the <span class="demo">Engineering and Vocational Education (PTK) department.</span> This placement revises our previous statement, where the PTIK study program is under the P.MIPA department. PTIK is a study program that will produce graduates who are <span class="demo">prioritized to teach in vocational/vocational programs.</span> So, it would be better if PTIK was under the PTK department which oversees vocational programs such as <span class="demo">Building Engineering Education</span>, and <span class="demo">Mechanical Engineering Education.</span> To meet the needs of lecturers in the field of information technology that cannot be met by the PTK department, PTIK will conduct <span class="demo">resource sharing with the mathematics study program.</span>
+    </p>
+
+    <button onclick="myFunction()">Highlight Paragraf</button>
+
+    <script>
+        const demo = document.querySelectorAll('.demo')
+
+        function myFunction() {
+            demo.forEach( (item) => {
+                if(item.classList.contains('active')){
+                    item.classList.remove('active')
+                } else {
+                    item.classList.add('active')
+                }
+            });
+        }
+    </script>
+</body>
+</html>

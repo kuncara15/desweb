@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Highlight Text</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+	<h1>PTIK FKIP UNS</h1>
+
+	<p>
+		The <span class="demo">Faculty of Teacher Training and Education</span>, <span class="demo">Sebelas Maret University</span>, Surakarta is an <span class="demo">Educational Personnel Education Institution (LPTK)</span> which has 24 study programs in 6 majors. Each study program has its own characteristics in producing <span class="demo">superior, strong and intelligent educational staff</span>.
+	</p>
+
+	<p>
+		The <span class="demo">Informatics and Computer Technology Education (PTIK)</span> study program is planned to take shelter in the management of the <span class="demo">Engineering and Vocational Education (PTK)</span> department. This placement revises our previous statement, where the PTIK study program is under the P.MIPA department. PTIK is a study program that will produce graduates who are <span class="demo">prioritized to teach in vocational/vocational programs</span>. So, it would be better if PTIK was under the PTK department which oversees vocational programs such as <span class="demo">Building Engineering Education</span>, and <span class="demo">Mechanical Engineering Education</span>. To meet the needs of lecturers in the field of information technology that cannot be met by the PTK department, PTIK will conduct <span class="demo">resource sharing with the mathematics study program</span>.
+
+	<p>
+		<button id="highlight">Highlight Paragraf</button>
+	</p>
+    <script type="text/javascript">
+        $('#highlight').click(function(){
+			    const nodeList = document.querySelectorAll(".demo");
+                if (nodeList[0].style.color!="red") {
+			        for (let i = 0; i < nodeList.length; i++) {
+			     	    $('.demo').css("backgroundColor", "yellow");
+			     	    $('.demo').css("color", "red");
+			     	    $('.demo').css("fontWeight", "900"); 
+			        }
+			    }
+			    else {
+			        for (let i = 0; i < nodeList.length; i++) {
+			    	    $('.demo').css("backgroundColor", "white");
+			     	    $('.demo').css("color", "black");
+			     	    $('.demo').css("fontWeight", "normal"); 
+			        }
+			    }
+		    });
+        </script>
+</body>
+</html>
